@@ -36,3 +36,18 @@ Throughout this project, I am building expertise in the following areas:
 * **OpenCV (CV2):** 4.10.0
 * **PyTorch:** 2.2.2+cu121
 * **Torchvision:** 0.17.2+cu121
+
+## ⚖️ Acknowledgments & License
+
+<div class="alert alert-success" role="alert">
+  <p>
+    This project file and exploration are licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International</a>.
+  </p>
+  <p>
+    Credit <b>to</b>:
+    <ul>
+      <li><span style="color: green">✓</span> <a href="https://www.wqu.edu/">WorldQuant University</a> for the foundational curriculum, dataset context, and environment.</li>
+      <li><span style="color: green">✓</span> <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Review the full License Details here</a>.</li>
+    </ul>
+  </p>
+</div>
