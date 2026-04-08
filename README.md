@@ -1,4 +1,8 @@
-# 🚦 Traffic Monitoring & Object Detection
+# Traffic Monitoring & Object Detection
+
+![Dhaka Traffic Feed](traffic.png)
+
+**[View the Full Interactive Visual Report Here](https://blazinbanana.github.io/Traffic-Monitoring/)**
 
 ## Overview
 This project focuses on applying computer vision techniques to analyze a traffic video feed from Dhaka, Bangladesh. The primary goal is to process video frames and detect/label objects (such as cars and people) in real-time. 
@@ -26,7 +30,7 @@ Throughout this project, I am building expertise in the following areas:
 * **XML Parsing:** Built parsers to extract object classifications and bounding box coordinates from XML files.
 * **Bounding Box Visualization:** Created visual overlays of bounding boxes on image data to validate detection accuracy.
 
-## Environment & Tech Stack
+## 🛠️ Environment & Tech Stack
 * **OS:** Linux
 * **Python:** 3.11.0 
 * **OpenCV (CV2):** 4.10.0
