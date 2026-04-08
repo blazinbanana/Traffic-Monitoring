@@ -2,7 +2,7 @@
 
 ![Dhaka Traffic Feed](traffic.png)
 
-**[View the Full Interactive Visual Report Here N/B give some secs for videos/photos to load](https://blazinbanana.github.io/Traffic-Monitoring/)**
+**[View the Full Interactive Visual Report Here (N/B give some secs for videos/photos to load)](https://blazinbanana.github.io/Traffic-Monitoring/)**
 
 ## Overview
 This project focuses on applying computer vision techniques to analyze a traffic video feed from Dhaka, Bangladesh. The primary goal is to process video frames and detect/label objects (such as cars and people) in real-time. 
