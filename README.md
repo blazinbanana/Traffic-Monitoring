@@ -1,34 +1,71 @@
 # Traffic Monitoring & Object Detection
 
-![Dhaka Traffic Feed](traffic.png)
+<video width="100%" controls autoplay loop muted>
+  <source src="traffic.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 
-**[View the Full Interactive Visual Report Here (N/B give some secs for videos/photos to load)](https://blazinbanana.github.io/Traffic-Monitoring/)**
+
+
+**[View a more visual workspace here Part A (N/B give some secs for videos/photos to load)](https://blazinbanana.github.io/Traffic-Monitoring/)**
+
+---
+
+**[View a more visual workspace here Part B (N/B give some secs for videos to load)](https://charming-torte-8a4575.netlify.app/)**
+
+---
 
 ## Overview
-This project focuses on applying computer vision techniques to analyze a traffic video feed from Dhaka, Bangladesh. The primary goal is to process video frames and detect/label objects (such as cars and people) in real-time. 
+This project focuses on applying computer vision techniques to analyze a traffic video feed from Dhaka, Bangladesh. The primary goal is to process video frames and detect/label multiple objects (such as cars and people) in real-time. 
 
-To achieve this, I am leveraging a pretrained YOLO (You Only Look Once) model and extending it to detect custom objects specifically tailored for traffic analysis.
+To achieve this, I am leveraging a pretrained **YOLO (You Only Look Once)** model. Compared to my previous work on Cassava Disease detection—which focused on classifying a single plant at a time—this new approach detects and localizes multiple objects simultaneously. This methodology is highly applicable in advanced fields such as autonomous vehicles.
 
-## Things I Aim to Master
-Throughout this project, I am building expertise in the following areas:
-* Extracting frames from video files at regular intervals.
-* Working with XML data containing bounding box annotations.
-* Applying and fine-tuning the pretrained YOLO object detection model.
-* Training YOLO to detect custom objects.
-* Augmenting data to enhance the model's ability to generalize during training.
-* Utilizing Python's `pathlib` for efficient file system navigation and management.
+---
 
-## Core Concepts Explored
-* **Object Detection vs. Classification:** Moving beyond simply classifying an entire image (classification) to identifying and precisely locating multiple objects within a frame (detection).
-* **Real-World Challenges:** Handling overlapping objects and partial occlusions in dense traffic feeds.
-* **Broader Applications:** While applied to traffic here, these techniques are directly transferable to wildlife monitoring, medical imaging, and more.
+## Why YOLO? 
+For images containing multiple objects, we need to answer two questions: *What are these objects?* and *Where are they located in the image?* YOLO excels at this because of its **speed**. A typical video runs at 30 frames per second (fps). To process video in real-time without lagging, a model must process frames faster than ~30 milliseconds per frame. YOLO consistently outperforms other models in speed comparisons, making it ideal for real-time video inference.
 
-## Current Progress & Objectives Met
+### How YOLO Works
+Instead of running a classifier across multiple sections of an image, YOLO looks at the entire image at once:
+* It passes the image through **convolutional layers** and **fully connected layers**.
+* It divides the image into an **$S \times S$ grid**.
+* It simultaneously predicts bounding boxes and probabilities for each grid cell.
+
+---
+
+##Objectives
+Throughout this project, I am building expertise in object detection by achieving the following:
+
+* Detect objects in an image using the YOLO model.
+* Parse the results and extract data from the YOLO model.
+* Display the resulting bounding boxes accurately on the target images.
+* Detect objects from a variety of sources, including images stored in local directories.
+* Extract frames and detect objects directly from a continuous video source.
+* Train YOLO to detect custom objects specifically tailored for traffic analysis.
+* Augment data to enhance the model's ability to generalize during training.
+* Utilize Python's `pathlib` for efficient file system navigation and management.
+
+---
+
+## YOLO Bounding Box Formats
+YOLO supports four primary formats for bounding boxes to make interfacing with different labeling tools and downstream tasks easier. 
+
+| Format | Description |
+| :--- | :--- |
+| **`xywh`** | Center X, Center Y, Width, Height (Absolute pixel values) |
+| **`xywhn`** | Center X, Center Y, Width, Height (Normalized between 0.0 and 1.0) |
+| **`xyxy`** | Top-Left X, Top-Left Y, Bottom-Right X, Bottom-Right Y (Absolute pixel values) |
+| **`xyxyn`** | Top-Left X, Top-Left Y, Bottom-Right X, Bottom-Right Y (Normalized between 0.0 and 1.0) |
+
+---
+
+## Current Progress & Milestones Met
 * **Data Organization:** Loaded and structured the project dataset, separating raw images from their corresponding XML annotations.
 * **Handling Diverse Data Sources:** Successfully integrated both pre-existing image datasets and frames extracted from a YouTube video.
-* **Video Processing:** Implemented scripts to extract frames from a video feed at regular intervals.
 * **XML Parsing:** Built parsers to extract object classifications and bounding box coordinates from XML files.
 * **Bounding Box Visualization:** Created visual overlays of bounding boxes on image data to validate detection accuracy.
+
+---
 
 ## 🛠️ Environment & Tech Stack
 * **OS:** Linux
@@ -36,6 +73,8 @@ Throughout this project, I am building expertise in the following areas:
 * **OpenCV (CV2):** 4.10.0
 * **PyTorch:** 2.2.2+cu121
 * **Torchvision:** 0.17.2+cu121
+
+---
 
 ## ⚖️ Acknowledgments & License
 
