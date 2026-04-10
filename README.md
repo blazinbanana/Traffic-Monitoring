@@ -3,16 +3,6 @@
 https://github.com/user-attachments/assets/4c510ff7-57cc-4899-928a-418b327f64cc
 
 
-
----
-## Workflow
-
-**[View a more visual workspace here Part A (N/B give some secs for videos/photos to load)](https://blazinbanana.github.io/Traffic-Monitoring/)**
-
----
-
-**[View a more visual workspace here Part B (N/B give some secs for videos to load)](https://charming-torte-8a4575.netlify.app/)**
-
 ---
 
 ## Overview
@@ -65,6 +55,17 @@ YOLO supports four primary formats for bounding boxes to make interfacing with d
 | **`xyxyn`** | Top-Left X, Top-Left Y, Bottom-Right X, Bottom-Right Y (Normalized between 0.0 and 1.0) |
 
 ---
+
+## Workflow
+
+**[View a more visual workspace here Part A (N/B give some secs for videos/photos to load)](https://blazinbanana.github.io/Traffic-Monitoring/)**
+
+---
+
+**[View a more visual workspace here Part B (N/B give some secs for videos to load)](https://charming-torte-8a4575.netlify.app/)**
+
+---
+
 
 ## Current Progress & Milestones Met
 * **Data Organization:** Loaded and structured the project dataset, separating raw images from their corresponding XML annotations.
