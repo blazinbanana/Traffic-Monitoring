@@ -1,9 +1,6 @@
 # Traffic Monitoring & Object Detection
 
-<video width="100%" controls autoplay loop muted>
-  <source src="https://github.com/user-attachments/assets/4c510ff7-57cc-4899-928a-418b327f64cc" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/4c510ff7-57cc-4899-928a-418b327f64cc
 
 
 
