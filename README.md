@@ -1,11 +1,11 @@
 # Traffic Monitoring & Object Detection
 
-<video width="100%" controls autoplay loop muted>
-  <source src="traffic.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/4c510ff7-57cc-4899-928a-418b327f64cc
 
 
+
+---
+## Workflow
 
 **[View a more visual workspace here Part A (N/B give some secs for videos/photos to load)](https://blazinbanana.github.io/Traffic-Monitoring/)**
 
@@ -25,6 +25,13 @@ To achieve this, I am leveraging a pretrained **YOLO (You Only Look Once)** mode
 ## Why YOLO? 
 For images containing multiple objects, we need to answer two questions: *What are these objects?* and *Where are they located in the image?* YOLO excels at this because of its **speed**. A typical video runs at 30 frames per second (fps). To process video in real-time without lagging, a model must process frames faster than ~30 milliseconds per frame. YOLO consistently outperforms other models in speed comparisons, making it ideal for real-time video inference.
 
+### This plot shows an Inference time comparison between YOLO and other Computer Vision Models
+
+
+![Model Inference Speed Plot](yolo.png)
+
+
+
 ### How YOLO Works
 Instead of running a classifier across multiple sections of an image, YOLO looks at the entire image at once:
 * It passes the image through **convolutional layers** and **fully connected layers**.
@@ -33,7 +40,7 @@ Instead of running a classifier across multiple sections of an image, YOLO looks
 
 ---
 
-##Objectives
+## Objectives
 Throughout this project, I am building expertise in object detection by achieving the following:
 
 * Detect objects in an image using the YOLO model.
