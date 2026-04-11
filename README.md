@@ -66,12 +66,48 @@ YOLO supports four primary formats for bounding boxes to make interfacing with d
 
 ---
 
+## Adding Custom Classes
+
+Building an object detection model for custom classes requires three core components:
+1. **Labeled Training Data** 2. **Model Architecture** (YOLO)
+3. **Loss Function Optimization**
+
+Unlike simple image classification (which relies solely on Cross-Entropy), object detection models must account for multiple types of errors simultaneously.
+
+---
+
+### **Understanding Our Loss Functions**
+In multiple object detection, the model can make three distinct types of errors. We use specific loss functions to penalize and correct each of these:
+
+| Error Type | What it Means | Assigned Loss Function |
+| :--- | :--- | :--- |
+| **Missed Object** | The model failed to detect an object that is present. | **Binary Cross Entropy (BCE)** |
+| **Wrong Location** | The bounding box does not accurately surround the object. | **Complete Intersection over Union (CIoU)** |
+| **Wrong Class** | The object is detected but assigned the wrong label. | **Focal Loss** *(Scaled Multiclass Cross-Entropy)* |
+
+---
+
+### **Core Objectives**
+To successfully fine-tune and deploy this model, the following pipeline objectives were met:
+
+* **Data Preprocessing:**
+  * Converted existing bounding boxes into the new representation required by the YOLO architecture.
+  * Cleanly handled and filtered out malformed data to ensure training stability.
+* **Environment Setup:**
+  * Assembled the dataset and configuration files into the strict directory structure expected by the YOLO framework.
+* **Model Training & Inference:**
+  * Fine-tuned the pre-trained model to detect the new, custom traffic-related classes. eg **Ambulance**
+  * Ran inference to successfully detect these new classes in unlabelled images.
+
+---
+
 
 ## Current Progress & Milestones Met
 * **Data Organization:** Loaded and structured the project dataset, separating raw images from their corresponding XML annotations.
 * **Handling Diverse Data Sources:** Successfully integrated both pre-existing image datasets and frames extracted from a YouTube video.
 * **XML Parsing:** Built parsers to extract object classifications and bounding box coordinates from XML files.
 * **Bounding Box Visualization:** Created visual overlays of bounding boxes on image data to validate detection accuracy.
+* **Model Fine-tuning:** The model can now detect the additional classes.
 
 ---
 
