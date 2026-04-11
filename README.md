@@ -69,7 +69,8 @@ YOLO supports four primary formats for bounding boxes to make interfacing with d
 ## Adding Custom Classes
 
 Building an object detection model for custom classes requires three core components:
-1. **Labeled Training Data** 2. **Model Architecture** (YOLO)
+1. **Labeled Training Data** 
+2. **Model Architecture** (YOLO)
 3. **Loss Function Optimization**
 
 Unlike simple image classification (which relies solely on Cross-Entropy), object detection models must account for multiple types of errors simultaneously.
