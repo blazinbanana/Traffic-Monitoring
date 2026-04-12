@@ -1,6 +1,6 @@
 # Traffic Monitoring & Object Detection
 
-> **`[▶ ]`** <img src="https://cdnjs.cloudflare.com/ajax/libs/SVG-Loaders/0.1.5/puff.svg" width="24" /> *See sample output here...* > ⬇️
+> **`[▶ ]`** *See sample output here...* > 
 
 ![Traffic Monitoring Demo](demo.gif) 
 
