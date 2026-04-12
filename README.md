@@ -1,8 +1,8 @@
 # Traffic Monitoring & Object Detection
 
-> **`[▶ EXECUTING: real_time_inference.py]`** > *See sample output here...* 
+> **`[▶ ]`** <img src="https://cdnjs.cloudflare.com/ajax/libs/SVG-Loaders/0.1.5/puff.svg" width="24" /> *See sample output here...* > ⬇️
 
-![Traffic Monitoring Demo](demo.gif)
+![Traffic Monitoring Demo](demo.gif) 
 
 ---
 
