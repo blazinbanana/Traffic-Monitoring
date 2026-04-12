@@ -1,7 +1,6 @@
 # Traffic Monitoring & Object Detection
 
-https://github.com/user-attachments/assets/4c510ff7-57cc-4899-928a-418b327f64cc
-
+![Traffic Monitoring Demo](demo.gif)
 
 ---
 
